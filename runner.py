@@ -4,6 +4,8 @@ import time
 
 import tictactoe as ttt
 
+FONT = 'OpenSans-Regular.ttf'
+
 pygame.init()
 size = width, height = 600, 400
 
@@ -13,9 +15,9 @@ white = (255, 255, 255)
 
 screen = pygame.display.set_mode(size)
 
-mediumFont = pygame.font.Font("/home/tamkin/CS50AI/ai50/projects/2024/x/tictactoe/OpenSans-Regular.ttf", 28)
-largeFont = pygame.font.Font("/home/tamkin/CS50AI/ai50/projects/2024/x/tictactoe/OpenSans-Regular.ttf", 40)
-moveFont = pygame.font.Font("/home/tamkin/CS50AI/ai50/projects/2024/x/tictactoe/OpenSans-Regular.ttf", 60)
+mediumFont = pygame.font.Font(FONT, 28)
+largeFont = pygame.font.Font(FONT, 40)
+moveFont = pygame.font.Font(FONT, 60)
 
 user = None
 board = ttt.initial_state()
